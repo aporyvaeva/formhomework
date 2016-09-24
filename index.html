@@ -3,12 +3,49 @@
     <head>
        <meta charset="utf-8">
         <title>Document</title>
-        <link rel="stylesheet" href="stylesheet" type="text/css">
+        <style>
+    input[type=submit], input[type=reset]
+    {
+    background-color: #4CAF50;
+    border:none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration:none;
+    margin: 5px 7px;
+    cursor: pointer;
+}
+button[type=button]
+{
+   background-color: #4CAF50;
+    border:none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration:none;
+    margin: 5px 7px;
+    cursor: pointer;  
+}
+select {
+    width: 50%;
+    padding: 16px 106px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CA ;
+}
+input[type=name],input[type=email],input[type=telephone],textarea
+{
+    width: 80%;
+    padding: 8px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid green ;
+    border-radius: 9px;
+}
+</style>
     </head>
     <body>
 <form action="https://formspree.io/angelinaporyvaeva0303@gmail.com" method="POST">
     <fieldset>
-        <legends>Оценка кафе: <br> Здравствуйте, потратьте, пожалуйста, несколько минут своего времени на заполнение следующей анкеты.</legends> <br>
+        <legend align="center">Оценка кафе: <br> Здравствуйте, потратьте, пожалуйста, несколько минут своего времени на заполнение следующей анкеты.</legend> <br>
     <br>
     <label for="question">1.Как часто Вы ходите в кафе?</label> <br>
     <input type="radio" name="frequensy" class="frequensy" required>
@@ -35,8 +72,8 @@
            <option value="5" selected>5</option>
     </select>
     <br><br>
-    <label for="question">3.Как Вы, в общем, оцениваете наше кафе?</label><br>
-    <input type="number" name="quantity" min="1" max="5" >
+    <label for="question">3.Как Вы, в общем, оцениваете наше кафе?</label><br><br>
+    <input type="number" name="quantity" min="1" max="5">
     <br><br>
     <label for="questions">4.Вы бы рекомендовали наше кафе своим знакомым?</label> <br>
     <input type="checkbox" name="question1" value="yes"> Да <br>
@@ -46,7 +83,7 @@
      <h3>Заполните, пожалуйста, форму для обратной связи:</h3> 
      <br>
     <label for="name">ФИО:</label> <br>
-    <input type="email" name="email" id="email" size="50" required>
+    <input type="name" name="name" id="name" size="50" required>
     <br>
     <label for="email">Email:</label><br>
     <input type="email" name="email" id="email" size="50" required>
