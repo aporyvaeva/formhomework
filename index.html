@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+       <meta charset="utf-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="stylesheet" type="text/css">
+    </head>
+    <body>
+<form action="https://formspree.io/angelinaporyvaeva0303@gmail.com" method="POST">
+    <fieldset>
+        <legends>Оценка кафе: <br> Здравствуйте, потратьте, пожалуйста, несколько минут своего времени на заполнение следующей анкеты.</legends> <br>
+    <p>1.Как часто Вы ходите в кафе?</p>  <br>
+    <input type="radio" name="frequensy" class="frequensy" required>
+    <label for="answer">Каждый день</label> <br>
+    <input type="radio" name="frequensy" class="frequensy" required>
+    <label for="answer">Несколько раз в неделю</label> <br>
+    <input type="radio" name="frequensy" class="frequensy" required>
+    <label for="answer">Один раз в неделю</label> <br>
+    <input type="radio" name="frequensy" class="frequensy" required>
+    <label for="answer">Несколько раз в месяц</label> <br>
+        <input type="radio" name="frequensy" class="frequensy" required>
+    <label for="answer">Один раз в месяц</label> <br>
+    <input type="radio" name="frequensy" class="frequensy" required>
+    <label for="answer">Несколько раз в год</label> <br>
+    <input type="radio" name="frequensy" class="frequensy" required>
+    <label for="answer">Никогда</label> <br>
+    <br>
+    <label for="question">2.Как Вы бы оценили персонал нашего кафе?</label> <br>
+    <select name="options">
+        <option value="1">1</option>
+        <option value="2">2</option>
+         <option value="3">3</option>
+          <option value="4">4</option>
+           <option value="5" selected>5</option>
+    </select>
+    <br><br>
+    <label for="question">3.Как Вы, в общем, оцениваете наше кафе?</label><br>
+    <input type="number" name="quantity" min="1" max="5" >
+    <br><br>
+    <label for="questions">4.Вы бы рекомендовали наше кафе своим знакомым?</label> <br>
+    <input type="checkbox" name="question1" value="yes"> Да <br>
+    <input type="checkbox" name="question2" value="no">  Нет <br><br>
+    <label for="question">5.Когда вы в последний раз посещали наше кафе</label><br>
+    <input type="date"     name="lastvisit">
+     <h3>Заполните, пожалуйста, форму для обратной связи:</h3> 
+     <br>
+    <label for="name">ФИО:</label> <br>
+    <input type="email" name="email" id="email" size="50" required>
+    <br>
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email" size="50" required>
+    <br>
+     <label for="telephone">Телефон:</label><br>
+     <input type="telephone" name="usrtel" id="tel" required>
+     <br>
+    <label for="comments">Комментарий:</label> <br>
+    <textarea name="comments" id="comments" ></textarea>
+          <br>
+        <input type="submit" name="submit" id="submit">
+        <input type="reset">
+        <br><br>
+        <button type="button" onclick="alert('Вы уверенны?')">Завершить опрос</button>
+        </fieldset>
+ </form>
+    </body>
+</html>
