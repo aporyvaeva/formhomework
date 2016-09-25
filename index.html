@@ -3,85 +3,37 @@
     <head>
        <meta charset="utf-8">
         <title>Document</title>
-        <style>
-    input[type=submit], input[type=reset]
-    {
-    background-color: #4CAF50;
-    border:none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration:none;
-    margin: 5px 7px;
-    cursor: pointer;
-    
-}
-button[type=button]
-{
-   background-color: #4CAF50;
-    border:none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration:none;
-    margin: 5px 550px;
-    cursor: pointer;  
-}
-select {
-    width: 50%;
-    padding: 16px 106px;
-    border: none;
-    border-radius: 8px;
-    background-color: #4CA ;
-}
-input[type=name],input[type=email],input[type=telephone],textarea
-{
-    width: 80%;
-    padding: 8px 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    border: 2px solid green ;
-    border-radius: 9px;
-}
-legend{
-    font-size: 25px;
-    font-weight:bold;
-    
-}
-p{
-    font-size:20px;
-}
-fieldset{
-     border-radius: 50px;
-     }
-</style>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
     </head>
     <body>
+        
 <form action="https://formspree.io/angelinaporyvaeva0303@gmail.com" method="POST">
     <fieldset>
         <legend align="center">Оценка кафе: <br> Здравствуйте, потратьте, пожалуйста, несколько минут своего времени на заполнение следующей анкеты.</legend> <br>
     <br>
     <p>1.Как часто Вы ходите в кафе?</p> 
-    <input type="radio" name="frequensy" id="frequensy1" value="frequensy1" required>
+    <input type="radio" name="frequensy" id="frequensy1" value="frequensy1">
     <label for="frequensy1">Каждый день</label> <br>
-    <input type="radio" name="frequensy" id="frequensy2" value="frequensy2" required>
+    <input type="radio" name="frequensy" id="frequensy2" value="frequensy2">
     <label for="frequensy2">Несколько раз в неделю</label> <br>
-    <input type="radio" name="frequensy" id="frequensy3" value="frequensy3" required>
+    <input type="radio" name="frequensy" id="frequensy3" value="frequensy3">
     <label for="frequensy3">Один раз в неделю</label> <br>
-    <input type="radio" name="frequensy" id="frequensy4" value="frequensy4" required>
+    <input type="radio" name="frequensy" id="frequensy4" value="frequensy4">
     <label for="frequensy4">Несколько раз в месяц</label> <br>
-    <input type="radio" name="frequensy" id="frequensy5" value="frequensy5" required>
+    <input type="radio" name="frequensy" id="frequensy5" value="frequensy5">
     <label for="frequensy5">Один раз в месяц</label> <br>
-    <input type="radio" name="frequensy" id="frequensy6" value="frequensy6" required>
+    <input type="radio" name="frequensy" id="frequensy6" value="frequensy6">
     <label for="frequensy6">Несколько раз в год</label> <br>
-    <input type="radio" name="frequensy" id="frequensy7" value="frequensy7" required>
+    <input type="radio" name="frequensy" id="frequensy7" value="frequensy7">
     <label for="frequensy7">Никогда</label> <br>
     <br>
     <p>2.Как Вы бы оценили персонал нашего кафе?</p> <br>
     <select name="options">
-        <option value="1">1</option>
-        <option value="2">2</option>
-         <option value="3">3</option>
-          <option value="4">4</option>
-           <option value="5" selected>5</option>
+        <option value="1">Очень плохо</option>
+        <option value="">Плохо</option>
+         <option value="3">Удовлетворительно</option>
+          <option value="4">Хорошо</option>
+           <option value="5" selected>Отлично</option>
     </select>
     <br><br>
     <p>3.Как Вы, в общем, оцениваете наше кафе?</p><br><br>
@@ -90,7 +42,7 @@ fieldset{
     <p>4. С какими высказываниями Вы согласны?</p> <br>
     <input type="checkbox" name="question" value="ok" id="ok">
     <label for="ok">Закуски сервировали замечательно</label><br>
-    <input type="checkbox" name="question" value="ok2"  id="ok2" >
+    <input type="checkbox" name="question" value="ok2"  id="ok2">
     <label for="ok2">Цена была приятная</label><br>
     <input type="checkbox" name="question" value="ok3" id="ok3">
     <label for="ok3">Обстановка кафе была успокаивающая</label><br>
@@ -98,25 +50,28 @@ fieldset{
     <label for="no">Мне не понравилось </label><br><br>
     
     <p>5.Когда вы в последний раз посещали наше кафе?</p><br>
-    <input type="date"     name="lastvisit">
-     <h3>Заполните, пожалуйста, форму для обратной связи:</h3> 
+    <input class="center" type="date"     name="lastvisit">
+    </div>
+    </fieldset>
+        <fieldset>
+     <h2 align="center">Заполните, пожалуйста, форму для обратной связи:</h2> 
      <br>
-    <label for="name">ФИО:</label> <br>
+    <label for="name">ФИО:(объязательно)</label> <br>
     <input type="name" name="name" id="name" size="50" required>
     <br>
-    <label for="email">Email:</label><br>
+    <label for="email">Email:(объязательно)</label><br>
     <input type="email" name="email" id="email" size="50" required>
     <br>
      <label for="telephone">Телефон:</label><br>
-     <input type="telephone" name="usrtel" id="telephone" required>
+     <input type="telephone" name="usrtel" id="telephone">
      <br>
     <label for="comments">Комментарий:</label> <br>
     <textarea name="comments" id="comments" ></textarea>
           <br>
-        <input type="submit" name="submit" id="submit">
+        <input type="submit" name="submit" id="submit" onclick="alert('Спасибо за уделенное время')">
         <input type="reset">
         <br><br>
-        <button type="button" onclick="alert('Вы уверенны?')">Завершить опрос</button>
+    
         </fieldset>
  </form>
     </body>
