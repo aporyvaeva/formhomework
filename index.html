@@ -13,6 +13,7 @@
     text-decoration:none;
     margin: 5px 7px;
     cursor: pointer;
+    
 }
 button[type=button]
 {
@@ -21,7 +22,7 @@ button[type=button]
     color: white;
     padding: 16px 32px;
     text-decoration:none;
-    margin: 5px 7px;
+    margin: 5px 550px;
     cursor: pointer;  
 }
 select {
@@ -40,6 +41,17 @@ input[type=name],input[type=email],input[type=telephone],textarea
     border: 2px solid green ;
     border-radius: 9px;
 }
+legend{
+    font-size: 25px;
+    font-weight:bold;
+    
+}
+p{
+    font-size:20px;
+}
+fieldset{
+     border-radius: 50px;
+     }
 </style>
     </head>
     <body>
@@ -47,23 +59,23 @@ input[type=name],input[type=email],input[type=telephone],textarea
     <fieldset>
         <legend align="center">Оценка кафе: <br> Здравствуйте, потратьте, пожалуйста, несколько минут своего времени на заполнение следующей анкеты.</legend> <br>
     <br>
-    <label for="question">1.Как часто Вы ходите в кафе?</label> <br>
-    <input type="radio" name="frequensy" class="frequensy" required>
-    <label for="answer">Каждый день</label> <br>
-    <input type="radio" name="frequensy" class="frequensy" required>
-    <label for="answer">Несколько раз в неделю</label> <br>
-    <input type="radio" name="frequensy" class="frequensy" required>
-    <label for="answer">Один раз в неделю</label> <br>
-    <input type="radio" name="frequensy" class="frequensy" required>
-    <label for="answer">Несколько раз в месяц</label> <br>
-        <input type="radio" name="frequensy" class="frequensy" required>
-    <label for="answer">Один раз в месяц</label> <br>
-    <input type="radio" name="frequensy" class="frequensy" required>
-    <label for="answer">Несколько раз в год</label> <br>
-    <input type="radio" name="frequensy" class="frequensy" required>
-    <label for="answer">Никогда</label> <br>
+    <p>1.Как часто Вы ходите в кафе?</p> 
+    <input type="radio" name="frequensy" id="frequensy1" value="frequensy1" required>
+    <label for="frequensy1">Каждый день</label> <br>
+    <input type="radio" name="frequensy" id="frequensy2" value="frequensy2" required>
+    <label for="frequensy2">Несколько раз в неделю</label> <br>
+    <input type="radio" name="frequensy" id="frequensy3" value="frequensy3" required>
+    <label for="frequensy3">Один раз в неделю</label> <br>
+    <input type="radio" name="frequensy" id="frequensy4" value="frequensy4" required>
+    <label for="frequensy4">Несколько раз в месяц</label> <br>
+    <input type="radio" name="frequensy" id="frequensy5" value="frequensy5" required>
+    <label for="frequensy5">Один раз в месяц</label> <br>
+    <input type="radio" name="frequensy" id="frequensy6" value="frequensy6" required>
+    <label for="frequensy6">Несколько раз в год</label> <br>
+    <input type="radio" name="frequensy" id="frequensy7" value="frequensy7" required>
+    <label for="frequensy7">Никогда</label> <br>
     <br>
-    <label for="question">2.Как Вы бы оценили персонал нашего кафе?</label> <br>
+    <p>2.Как Вы бы оценили персонал нашего кафе?</p> <br>
     <select name="options">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -72,13 +84,20 @@ input[type=name],input[type=email],input[type=telephone],textarea
            <option value="5" selected>5</option>
     </select>
     <br><br>
-    <label for="question">3.Как Вы, в общем, оцениваете наше кафе?</label><br><br>
+    <p>3.Как Вы, в общем, оцениваете наше кафе?</p><br><br>
     <input type="number" name="quantity" min="1" max="5">
     <br><br>
-    <label for="questions">4.Вы бы рекомендовали наше кафе своим знакомым?</label> <br>
-    <input type="checkbox" name="question1" value="yes"> Да <br>
-    <input type="checkbox" name="question2" value="no">  Нет <br><br>
-    <label for="question">5.Когда вы в последний раз посещали наше кафе</label><br>
+    <p>4. С какими высказываниями Вы согласны?</p> <br>
+    <input type="checkbox" name="question" value="ok" id="ok">
+    <label for="ok">Закуски сервировали замечательно</label><br>
+    <input type="checkbox" name="question" value="ok2"  id="ok2" >
+    <label for="ok2">Цена была приятная</label><br>
+    <input type="checkbox" name="question" value="ok3" id="ok3">
+    <label for="ok3">Обстановка кафе была успокаивающая</label><br>
+    <input type="checkbox" name="question" value="no"  id="no" >
+    <label for="no">Мне не понравилось </label><br><br>
+    
+    <p>5.Когда вы в последний раз посещали наше кафе?</p><br>
     <input type="date"     name="lastvisit">
      <h3>Заполните, пожалуйста, форму для обратной связи:</h3> 
      <br>
@@ -89,7 +108,7 @@ input[type=name],input[type=email],input[type=telephone],textarea
     <input type="email" name="email" id="email" size="50" required>
     <br>
      <label for="telephone">Телефон:</label><br>
-     <input type="telephone" name="usrtel" id="tel" required>
+     <input type="telephone" name="usrtel" id="telephone" required>
      <br>
     <label for="comments">Комментарий:</label> <br>
     <textarea name="comments" id="comments" ></textarea>
