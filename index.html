@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang=ru>
     <head>
        <meta charset="utf-8">
         <title>Document</title>
@@ -56,14 +56,14 @@
         <fieldset>
      <h2 align="center">Заполните, пожалуйста, форму для обратной связи:</h2> 
      <br>
-    <label for="name">ФИО:(объязательно)</label> <br>
-    <input type="name" name="name" id="name" size="50" required>
+    <label for="name">ФИО:<span class="required" title="required field">*</span></label> <br>
+    <input type="text" name="name" id="name" size="50" required>
     <br>
-    <label for="email">Email:(объязательно)</label><br>
+    <label for="email">Email:<span class="required" title="required field">*</span></label><br>
     <input type="email" name="email" id="email" size="50" required>
     <br>
-     <label for="telephone">Телефон:</label><br>
-     <input type="telephone" name="usrtel" id="telephone">
+     <label for="tel">Телефон:</label><br>
+     <input type="tel" name="usrtel" id="tel">
      <br>
     <label for="comments">Комментарий:</label> <br>
     <textarea name="comments" id="comments" ></textarea>

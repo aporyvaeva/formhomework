@@ -40,7 +40,7 @@ select {
     border-radius: 8px;
     background-color: #f0f0f0;
 }
-input[type=name],input[type=email],input[type=telephone],textarea
+input[type=name],input[type=email],input[type=tel],textarea
 {
     width:100%;
     padding: 8px 10px;
